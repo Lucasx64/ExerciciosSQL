@@ -73,4 +73,9 @@ CREATE TABLE TELEFONE_CLIENTE(
 );
 GO
 
+BEGIN TRAN -- Antes de fazer alterações nas linhas.
+
+ROLLBACK -- Caso tenha feito alterações de forma incorreta.
+
+COMMIT -- Após realizar as alterações e tudo estiver ok.
 
