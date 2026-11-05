@@ -1,4 +1,4 @@
---** Exercício 1 — Pizzaria (continuação da Aula 07).No banco Pizzaria:
+--** ExercÃ­cio 1 â€” Pizzaria (continuaÃ§Ã£o da Aula 07).No banco Pizzaria:
 
 Use Pizzaria;
 
@@ -15,7 +15,7 @@ SELECT TOP 3 * FROM PIZZA
 ORDER BY preco ASC
 
 
---3. Pizzas com preço entre R $50 e R$ 60.
+--3. Pizzas com preÃ§o entre R $50 e R$ 60.
 
 SELECT *
 FROM PIZZA 
@@ -45,7 +45,7 @@ GROUP BY cpf_cliente
 ORDER BY total_vendido desc
 
 
---7. Quantas pizzas (soma das quantidades) foram vendidas de cada código de pizza. *
+--7. Quantas pizzas (soma das quantidades) foram vendidas de cada cÃ³digo de pizza. *
 
 SELECT codigo_pizza as codigo,
        SUM(quantidade) as qtd_pedido
@@ -53,7 +53,7 @@ FROM ITEM_PEDIDO
 GROUP BY codigo_pizza
 
 
---8. Entregadores (matrícula) que fizeram mais de 2 entregas.
+--8. Entregadores (matrÃ­cula) que fizeram mais de 2 entregas.
 
 SELECT matricula_entregador, COUNT (*) as total
 from PEDIDO
@@ -69,7 +69,7 @@ HAVING COUNT (*) > 2
 ORDER BY total asc
 
 
---9. Preço médio, menor e maior preço das pizzas.
+--9. PreÃ§o mÃ©dio, menor e maior preÃ§o das pizzas.
 
 SELECT AVG(preco) as media,
        MIN(preco) as menor,
@@ -77,7 +77,7 @@ SELECT AVG(preco) as media,
 FROM PIZZA
 
 
---10. Quantos pedidos houve em cada dia, só dos dias com mais de 1 pedido.
+--10. Quantos pedidos houve em cada dia, sÃ³ dos dias com mais de 1 pedido.
 
 SELECT data_pedido, COUNT (*) quantidade
 FROM PEDIDO
